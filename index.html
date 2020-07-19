@@ -5,19 +5,25 @@
         <title>
             Tech Store
         </title>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
-        <div>
-            <h1>Tech Store</h1>
+        <header>
             <div>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="shop.html">shop</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                </ul>
+                <h1>Tech Store</h1>
+                <div>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <input type="search" placeholder="Search...">
             </div>
-            <input type="search" placeholder="Search...">
-        </div>
+        </header>
         <div>
             <!-- Main section to display products: -->
             <h2>Shop by:</h2>
@@ -48,37 +54,40 @@
         <div>
             <h2>All Items</h2>
             <hr>
-            <div>
-                <a href="product_detail.html"><img src="images/controller.jpg" alt="controller" height="300"></a>
+            <div class="product">
+                <a href="product_detail.html"><img src="images/controller.jpg" alt="controller"></a>
                 <a href="product_detail.html"><h4>Game Controler</h4></a>
                 <p>$79.95</p>
                 <p>Desription of the product</p>
             </div>
-            <div>
-                <img src="images/phone.jpeg" alt="phone" height="300">
+            <div class="product">
+                <img src="images/phone.jpeg" alt="phone">
                 <h4>Phone</h4>
                 <p>$179.95</p>
                 <p>Desription of the product</p>
             </div>
-            <div>
-                <img src="images/camera.jpeg" alt="camera" height="300">
+            <div class="product">
+                <img src="images/camera.jpeg" alt="camera">
                 <h4>Camera</h4>
                 <p>$479.95</p>
                 <p>Desription of the product</p>
             </div>
-            <div>
-                <img src="images/headphones.jpg" alt="headphones" height="300">
+            <div class="product">
+                <img src="images/headphones.jpg" alt="headphones">
                 <h4>Headphones</h4>
                 <p>$59.95</p>
                 <p>Desription of the product</p>
             </div>
         </div>
-        <div>
-            <ul>
-                <li>home</li>
-                <li>shop</li>
-                <li>contact us</li>
-            </ul>
-        </div>
+        <footer>
+            <div>
+                <ul>
+                    <li>home</li>
+                    <li>shop</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+        </footer>
+        
     </body>
 </html>
