@@ -7,20 +7,81 @@ body {
     background: white;
     max-width: 1000px;
     margin: 0 auto;
+    color: rgb(49, 46, 46)
 }
 
 header, footer {
     background: #333a40;
     color: white;
+    padding: 25px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #0e69e9;
 }
 
 .product {
+    box-sizing: border-box;
     border: 1px solid grey;
     width: 200px;
     margin: 5px;
     padding: 5px;
+    display: inline-block;
 }
 
 img {
     max-width: 100%;
+}
+
+header li {
+    display: inline;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
+main {
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+}
+
+main p {
+    padding: 5px 0;
+}
+
+main h4 {
+    padding: 0 0 5px 0;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+}
+
+aside li {
+    padding: 10px 0 0 10px;
+}
+
+.button {
+    margin: 0px auto;
+    padding: 5px;
+    display: inline-block;
+}
+
+.button:last-of-type {
+    background: #0e69e9;
+    color: white;
+}
+
+p:first-of-type {
+    color: red;
 }
