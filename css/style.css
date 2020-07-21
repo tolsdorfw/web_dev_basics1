@@ -5,15 +5,15 @@ html {
 body {
     font-family: 'Mulish', sans-serif;
     background: white;
-    max-width: 1000px;
     margin: 0 auto;
-    color: rgb(49, 46, 46)
+    color: rgb(49, 46, 46);
+    text-align: center;
 }
 
 header, footer {
-    background: #333a40;
+    background: rgba(56, 58, 61, 0.8);
     color: white;
-    padding: 25px 0;
+    padding: 25px 10px;
 }
 
 a {
@@ -25,29 +25,76 @@ a:hover {
     color: #0e69e9;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input[type="search"] {
+    width: 100%;
+}
+
+h3 {
+    padding-top: 10px; 
+}
+
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 200px;
+    /* width: 30%; */
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+    text-align: center;
+    text-justify: auto;
+    width: 100%;
+}
+
+.product_description {
+    padding-top: 100px;
+}
+
+.product_details {
+    width: 660px;
+}
+
+.product_details img {
+    max-width: 50%;
+    float: left;
+}
+
+th {
+    width: 100px;
 }
 
 img {
     max-width: 100%;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 header li {
     display: inline;
+    padding: 0 5px;
 }
 
 header h1, nav {
     display: inline-block;
 }
 
+header h1 {
+    width: 100%;
+}
+
+nav {
+    padding: 0 10px;
+}
+
 main {
-    width: 680px;
+    /* target / context = result */
     display: inline-block;
     padding: 10px;
 }
@@ -61,10 +108,12 @@ main h4 {
 }
 
 aside {
-    width: 270px;
+    /* target / context = result */
+    width: 100%;
     display: inline-block;
-    vertical-align: top;
     padding: 10px 0 0 10px;
+    /* position: sticky;
+    top: 85px; required */
 }
 
 aside li {
@@ -84,4 +133,96 @@ aside li {
 
 p:first-of-type {
     color: red;
+}
+
+td {
+    text-align: left;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+#controler {
+    position: sticky;
+}
+
+/* Contact us */
+
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+
+} 
+
+form > div {
+    padding-top: 10px;
+}
+
+.inline label{
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+.response {
+    padding: 10px 0;
+}
+
+@media (min-width: 600px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .product_details {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        text-align: left;
+        max-width: 80%;
+    }
+
+    header h1 {
+        width: 50%;
+    }
+
+    input[type="search"] {
+        width: 20%;
+    }
+
+    aside {
+        width: 27%;
+        vertical-align: top;
+    }
+
+    main {
+        width: 68%;
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    .product_details {
+        width: 100%;
+    }
 }

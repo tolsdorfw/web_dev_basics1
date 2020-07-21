@@ -10,18 +10,18 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">  
     </head>
     <body>
-        <div>
+        <header>
             <h1>Tech Store</h1>
-            <div>
+            <nav>
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="shop.html">shop</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                </ul>
-            </div>
+                     <li><a href="#">shop</a></li>
+                     <li><a href="contact.html">contact us</a></li>
+                 </ul>
+             </nav>
             <input type="search" placeholder="Search...">
-        </div>
-        <div>
+        </header>
+        <aside>
             <!-- Main section to display products: -->
             <h2>Shop by:</h2>
             <h3>Price <span>($)</span></h3>
@@ -47,39 +47,44 @@
                         <li>Other</li>
                     </ul>
                 </div>
-        </div>
-        <div>
+            </aside>
+        <main>
             <h2>All Items</h2>
             <hr>
-            <div>
-                <img src="images/controller.jpg" alt="controller" height="300">
-                <h4>Game Controler</h4>
-                <p>$79.95</p>
-                <p>Desription of the product</p>
+            <div class="product product_details">
+                <img src="images/controller.jpg" alt="controller">
+                <div class="product_description">
+                    <h4>Game Controler</h4>
+                    <p>$79.95</p>
+                    <p>Desription of the product</p>
+                    <a href="#" class="button">More Info</a>
+                    <a href="#" class="button">Add To Cart</a>
+                </div>
+                
             </div>
             <table>
                 <tr>
-                    <th>Quantity: </th>
+                    <th>Quantity:</th>
                     <td>1</td>
-                    <td>2 - 5</td>
-                    <td>6 - 9</td>
+                    <td>2-5</td>
+                    <td>6-9</td>
                     <td>10+</td>
                 </tr>
                 <tr>
-                    <th>Price: </th>
+                    <th>Price:</th>
                     <td>79.95</td>
                     <td>78.95</td>
                     <td>76.95</td>
                     <td>74.95</td>
                 </tr>
             </table>
-        </div>
-        <div>
+        </main>
+        <footer>
             <ul>
-                <li>home</li>
-                <li>shop</li>
-                <li>contact us</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="contact.html">contact us</a></li>
             </ul>
-        </div>
+        </footer>
     </body>
 </html>
